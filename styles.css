@@ -60,7 +60,7 @@ header nav ul li a {
 footer {
   background-color: #830974;
   color: #fff;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   width: 100%;
   position: fixed;
@@ -88,14 +88,21 @@ footer {
   text-decoration: none;
 }
 
-.social-links a:hover {
+/* Estilo para mudar a cor do ícone quando o mouse estiver sobre ele */
+.social-links a.text-danger:hover {
   color: #e4405f; /* Cor do Instagram ao passar o mouse */
 }
 
-.social-links a:nth-child(2):hover {
+.social-links a.text-success:hover {
   color: #25d366; /* Cor do WhatsApp ao passar o mouse */
 }
 
-.social-links a:last-child:hover {
+.social-links a.text-primary:hover {
   color: #1877f2; /* Cor do Facebook ao passar o mouse */
+}
+
+/* Modo Escuro */
+.dark-mode {
+  background-color: #000;
+  color: #fff;
 }

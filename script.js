@@ -13,3 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Função para alternar o Modo Escuro
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+}
