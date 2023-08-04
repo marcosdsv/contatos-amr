@@ -22,6 +22,12 @@ header {
 .menu a{
   text-decoration:none ;
 }
+<<<<<<< HEAD
+=======
+.btn-dark{
+  margin: 2px;
+}
+>>>>>>> 4dfc5e7f878d98e0d67d7aa276a3ddb6075361ed
 .container{
   width: 100%;
   height: 100px;
@@ -55,11 +61,14 @@ header nav ul li a {
   color: #fff;
   font-size: 14px;
 }
+<<<<<<< HEAD
         /* Estilização para o botão do Instagram */
         .btn-instagram {
           background: linear-gradient(135deg, #405DE6, #833AB4);
           color: #ffffff;
       }
+=======
+>>>>>>> 4dfc5e7f878d98e0d67d7aa276a3ddb6075361ed
 
 /* Estilos para os ícones de redes sociais no menu */
 .social-icons {
