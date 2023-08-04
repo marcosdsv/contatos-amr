@@ -1,4 +1,15 @@
 // Código JavaScript personalizado
+
+// Função para alternar o modo escuro
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
+
+// Evento para mostrar/ocultar o menu hamburguer
+document.querySelector('.hamburger-menu').addEventListener('click', function () {
+  document.querySelector('.menu-mobile').classList.toggle('show');
+});
+
 // Adicione eventos de hover para mudar a cor dos ícones de redes sociais no rodapé
 document.addEventListener('DOMContentLoaded', function () {
   const socialIcons = document.querySelectorAll('.social-icons a');
@@ -14,8 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Função para alternar o Modo Escuro
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
-}
+// Script para ativar o menu responsivo
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
