@@ -1,9 +1,15 @@
-/* Estilos gerais */
+/* Reset de estilos padrão */
 * {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #830974;
 }
 
 /* Estilos para o menu */
@@ -14,36 +20,32 @@ header {
   width: 100%;
 }
 
-/* Estilos para a imagem do logo */
-img {
-  max-width: 150px; /* Tamanho médio para a logo */
-  height: auto;
-}
-
-/* Estilos para os ícones de redes sociais no menu */
-.social-icons {
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-/* Estilos para o menu */
 .menu a {
   text-decoration: none;
 }
 
-/* Estilos para a seção principal */
-main {
-  background-color: #830974;
+.logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
 }
 
-/* Estilos para o texto dentro da seção principal */
-main p {
-  color: black;
+.logo img {
+  max-height: 5rem;
+  margin-right: 10px;
+}
+
+/* Estilos para as redes sociais no rodapé */
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+  width: 100%;
 }
 
 /* Estilização para o botão do Instagram */
@@ -52,44 +54,67 @@ main p {
   color: #ffffff;
 }
 
-/* Estilos para a logo no menu */
-.logo {
-  display: flex;
-  align-items: center;
+/* Estilo para mudar a cor do ícone quando o mouse estiver sobre ele */
+.social-links a.text-danger:hover {
+  color: #e4405f;
+  /* Cor do Instagram ao passar o mouse */
 }
 
-/* Estilos para a imagem da logo no menu */
-.logo img {
-  max-height: 5rem;
-  margin-right: 10px;
+.social-links a.text-success:hover {
+  color: #25d366;
+  /* Cor do WhatsApp ao passar o mouse */
 }
 
-/* Estilos para o rodapé e links de redes sociais */
-.social-links {
+.social-links a.text-primary:hover {
+  color: #1877f2;
+  /* Cor do Facebook ao passar o mouse */
+}
+
+/* Estilização para a seção de redes sociais */
+.redes-sociais {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #830974;
 }
 
-/* Estilos para os links de redes sociais no rodapé */
-.social-links a {
+.redes-sociais a {
   color: #fff;
-  font-size: 20px;
-  margin: 5px;
+  font-size: 24px;
+  margin: 0 10px;
   text-decoration: none;
-  width: 100%; /* Ajusta o tamanho do botão para ocupar todo o espaço disponível */
 }
 
-/* Estilo para mudar a cor do ícone do Instagram quando o mouse estiver sobre ele */
-.social-links a.text-danger:hover {
-  color: #e4405f; /* Cor do Instagram ao passar o mouse */
+/* Estilos para o conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #830974;
 }
 
-/* Estilo para mudar a cor do ícone do WhatsApp quando o mouse estiver sobre ele */
-.social-links a.text-success:hover {
-  color: #25d366; /* Cor do WhatsApp ao passar o mouse */
+main p {
+  color: black;
 }
 
-/* Estilo para mudar a cor do ícone do Facebook quando o mouse estiver sobre ele */
-.social-links a.text-primary:hover {
-  color: #1877f2; /* Cor do Facebook ao passar o mouse */
+/* Estilos para a imagem do logo */
+img {
+  max-width: 150px;
+  /* Tamanho médio para a logo */
+  height: auto;
+}
+
+/* Media query para dispositivos entre 200px e 700px de largura */
+@media (min-width: 200px) and (max-width: 700px) {
+  .redes-sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redes-sociais a {
+    margin: 10px 0;
+  }
 }
