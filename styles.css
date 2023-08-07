@@ -79,7 +79,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #830974;
-  margin: 0; /* Remover a margem */
 }
 
 .redes-sociais a {
@@ -97,7 +96,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height:50vh;
+  min-height: 100vh;
   text-align: center;
   background-color: #830974;
 }
@@ -112,4 +111,12 @@ main p {
     flex-direction: column;
     align-items: center;
   }
+  /* Aumentar o tamanho da imagem em 20% e centralizar */
+.logo img {
+  height: 10rem; /* Aumentado em 20% */
+  margin-right: 10px;
+  display: block;
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
 }
