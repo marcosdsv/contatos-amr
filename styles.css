@@ -1,0 +1,122 @@
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #830974;
+}
+
+/* Estilos para o menu */
+header {
+  background-color: #830974;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Aumentar o tamanho da imagem em 20% e centralizar */
+.logo img {
+  height: 20rem; /* Aumentado em 20% */
+  margin-right: 10px;
+  display: block;
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+/* Estilos para as redes sociais no rodapé */
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Estilização para o botão do Instagram */
+.btn-instagram {
+  background: linear-gradient(135deg, #405DE6, #833AB4);
+  color: #ffffff;
+}
+
+/* Estilo para mudar a cor do ícone quando o mouse estiver sobre ele */
+.social-links a.text-danger:hover {
+  color: #e4405f;
+  /* Cor do Instagram ao passar o mouse */
+}
+
+.social-links a.text-success:hover {
+  color: #25d366;
+  /* Cor do WhatsApp ao passar o mouse */
+}
+
+.social-links a.text-primary:hover {
+  color: #1877f2;
+  /* Cor do Facebook ao passar o mouse */
+}
+
+/* Estilização para a seção de redes sociais */
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #830974;
+}
+
+.redes-sociais a {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+  padding: 8px 16px; /* Adicionei padding para definir o tamanho médio dos botões */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #830974;
+}
+
+main p {
+  color: black;
+}
+
+/* Media query para dispositivos entre 200px e 700px de largura */
+@media (min-width: 200px) and (max-width: 700px) {
+  .redes-sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Aumentar o tamanho da imagem em 20% e centralizar */
+.logo img {
+  height: 10rem; /* Aumentado em 20% */
+  margin-right: 10px;
+  display: block;
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+}
